@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        #bg-div {
+            height: 500px;
+            width: 1000px;
+            background: url("image/car_3.jpg");
+            margin: 0 auto;
+            background-size: contain; /*What the meaning?*/
+
+            /*center this div*/
+        }
+    </style>
+
+    <script>
+        for (var i = 1; i < 5; ++i) {
+            setTimeout(function timer() {
+                console.log(i);
+                console.log(new Date());
+            }, i * 1000);
+        }
+
+        var obj =  {
+            name: "n",
+            value: "val",
+            addr: "city"
+        }
+
+        //how to traversal the "obj"
+
+
+
+        //how to to object to json string
+        console.log(toString(obj));
+
+
+        //how to json string to object
+        var strObj = '{name: "n",value: "val",addr: "city"}';
+
+
+
+    </script>
+</head>
+<body>
+<div id="bg-div">bg-div</div>
+</body>
+</html>
